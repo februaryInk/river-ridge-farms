@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Edwardian Script ITC';
+  src: url(font-path('edwardian_script_itc/Edwardian-Script-ITC-Regular.eot')); /* IE9 Compat Modes */
+  src: url(font-path('edwardian_script_itc/Edwardian-Script-ITC-Regular.eot?#iefix')) format('embedded-opentype'), /* IE6-IE8 */
+  url(font-path('edwardian_script_itc/Edwardian-Script-ITC-Regular.woff')) format('woff'), /* Pretty Modern Browsers */
+  url(font-path('edwardian_script_itc/Edwardian-Script-ITC-Regular.ttf')) format('truetype'), /* Safari, Android, iOS */
+  url(font-path('edwardian_script_itc/Edwardian-Script-ITC-Regular.svg')) format('svg'); /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,29 @@
+// POSITIONING
+
+@mixin clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin vertically-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+// TYPOGRAPHY
+
+@mixin accent-family {
+    font-family: 'Federant', 'Amaranth', 'Allerta Stencil', 'Tangerine', cursive;
+}
+
+@mixin sans-serif-family {
+    font-family: 'Expletus Sans', 'Alegreya Sans', 'Josefin Sans', Helvetica, sans-serif;
+}
+
+@mixin serif-family {
+    font-family: 'Bree Serif', 'Fontin', Impact, serif;
+}

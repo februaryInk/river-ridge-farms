@@ -1,0 +1,18 @@
+!!!
+%html
+    %head
+        %meta{ :content => 'text/html; charset=UTF-8', 'http-equiv' => 'Content-Type' }
+        %title
+            River Ridge Farms
+        = stylesheet_link_tag 'application', :media => 'all'
+        = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700|Bree+Serif|Josefin+Sans:400,700|Exo+2:400,600|Cuprum:400,700|Maven+Pro:400,700|Patua+One|Monda:400,700|Amaranth|Allerta+Stencil|Alegreya+SC:400,700|Cinzel+Decorative:400,900|Expletus+Sans:400,700|Chau+Philomene+One|Federant'
+        = javascript_include_tag 'application'
+        = javascript_include_tag 'https://maps.googleapis.com/maps/api/js?sensor=false'
+        = csrf_meta_tags
+    %body{ :class => '#{page_body_class}' }
+        %div#page-wrapper
+            = yield :header if content_for?(:header)
+            %div#flash-container
+                = render partial: 'shared/flash_messages.html.haml'
+            = yield :page_content
+            = yield :footer if content_for?(:footer)

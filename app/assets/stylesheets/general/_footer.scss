@@ -1,0 +1,32 @@
+footer {
+    bottom: 0;
+    display: block;
+    height: $size-footer-height;
+    position: absolute;
+    width: 100%;
+}
+
+.footer-content {
+    height: 100%;
+    margin: 0 auto;
+    width: $size-container-width;
+}
+
+.footer-panel {
+    color: $color-gray-nickel;
+    vertical-align: middle;
+
+    &.footer-panel-left {
+        text-align: right;
+        width: 40%;
+    }
+    
+    &.footer-panel-middle {
+        text-align: center;
+    }
+    
+    &.footer-panel-right {
+        text-align: left;
+        width: 40%;
+    }
+}

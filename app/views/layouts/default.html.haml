@@ -1,0 +1,7 @@
+- content_for(:header) { render :partial => 'layouts/header.html.haml' }
+- content_for(:footer) { render :partial => 'layouts/footer.html.haml' }
+- content_for(:page_content) do
+    %main.container.padding-footer-height
+        = yield
+
+= render :template => 'layouts/application'
