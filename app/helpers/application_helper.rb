@@ -1,4 +1,7 @@
 module ApplicationHelper
+  
+  include FormsHelper
+  
   def google_api_url
     'https://maps.googleapis.com/maps/api/js'
   end

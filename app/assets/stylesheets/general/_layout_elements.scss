@@ -9,6 +9,8 @@
 }
 
 .container {
+    @include overflow-clear;
+    
     display: block;
     margin: 0 auto;
     position: relative;
@@ -16,7 +18,8 @@
 }
 
 .page-content {
-    padding-top: 3em;
+    padding-bottom: $size-footer-padding;
+    padding-top: 4em;
 }
 
 .sign {

@@ -4,11 +4,15 @@
 @import 'general/definitions/variables.scss';
 @import 'general/definitions/mixins.scss';
 
-@import 'general/global_modifiers.scss';
+@import 'general/buttons_and_links.scss';
 @import 'general/header.scss';
+@import 'general/inputs.scss';
 @import 'general/footer.scss';
+@import 'general/grid.scss';
 @import 'general/layout_elements.scss';
 @import 'general/typography.scss';
+
+@import 'general/global_modifiers.scss';
 
 * {
     box-sizing: border-box;

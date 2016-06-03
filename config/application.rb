@@ -22,5 +22,10 @@ module PatriciasChocolate
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    
+    # Use the custom form builder as the default rather than the built-in one.
+    config.after_initialize do
+      ActionView::Base.default_form_builder = FormsHelper::CustomFormBuilder
+    end
   end
 end

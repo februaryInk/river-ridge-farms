@@ -1,4 +1,5 @@
 class CorePagesController < ApplicationController
+  
   def about
   end
 
@@ -6,5 +7,8 @@ class CorePagesController < ApplicationController
   end
 
   def home
+  end
+  
+  def locations
   end
 end

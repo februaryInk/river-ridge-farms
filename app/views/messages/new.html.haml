@@ -1,0 +1,27 @@
+%section.page-content
+    %div.container
+        %div.centered.column-100.margin-b2
+            %h1.heading.-large
+                Contact Us
+            %p
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        = form_for @message do |f|
+            %div.column-50.field
+                = f.label :name, class: "required"
+                = f.text_field :name
+                = f.error_message :name
+            %div.column-50.field
+                = f.label :email, class: "required"
+                = f.text_field :email
+                = f.error_message :email
+            %div.column-100
+                %div.field
+                    = f.label :subject
+                    = f.text_field :subject
+                    = f.error_message :subject
+                %div.field
+                    = f.label :content, "Message", class: "required"
+                    = f.text_area :content
+                    = f.error_message :content
+                %div.text-align-center
+                    = f.submit "Submit", class: "button -dark -large"
