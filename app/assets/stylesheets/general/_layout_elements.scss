@@ -1,0 +1,36 @@
+.banner {
+    height: 20em;
+    width: 100%;
+    
+    &.-image {
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: $size-container-width;
+}
+
+.page-content {
+    padding-top: 3em;
+}
+
+.sign {
+    background-image: image-url('wood.jpg');
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    border: 1px solid #776666;
+    box-shadow: 0.5em 0.5em 0.5em 0.25em $color-gray-nickel;
+    margin: auto auto 2em;
+    padding: 2em;
+    text-align: center;
+}
+
+#page-wrapper {
+    min-height: 100%;
+    position: relative;
+}

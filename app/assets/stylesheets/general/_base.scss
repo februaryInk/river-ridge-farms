@@ -7,6 +7,7 @@
 @import 'general/global_modifiers.scss';
 @import 'general/header.scss';
 @import 'general/footer.scss';
+@import 'general/layout_elements.scss';
 @import 'general/typography.scss';
 
 * {
@@ -15,6 +16,11 @@
 
 body {
     height: 100%;
+    
+    &.-linen {
+        background-image: image-url('linen.jpg');
+        background-repeat: repeat;
+    }
 }
 
 footer,
@@ -27,41 +33,10 @@ html {
     height: 100%;
 }
 
-.container {
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    width: $size-container-width;
-}
-
-.content-with-sidebar-left {
-    padding-left: 22em;
-}
-
 .map-container {
     border: 12px double $color-tundora;
-    float: right;
     height: 30em;
     width: 38em;
-}
-
-.table-contact {
-    cell-padding: 0;
-    cell-spacing: 0;
-    width: 100%;
-    
-    td {
-        vertical-align: middle;
-    }
-    
-    tr {
-        height: 7.5em;
-    }
-}
-
-#page-wrapper {
-    min-height: 100%;
-    position: relative;
 }
 
 #map-canvas {

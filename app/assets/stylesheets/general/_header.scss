@@ -1,6 +1,8 @@
 header {
     background-color: $color-deep-sea;
+    background-image: linear-gradient(to bottom, lighten($color-deep-sea, 5%), darken($color-deep-sea, 3%)); 
     border-bottom: 1px solid darken($color-deep-sea, 10%);
+    box-shadow: 0 0.5em 0.75em 0 $color-gray-nickel;
     color: $color-white;
     height: 8em;
     min-width: $size-container-width;
