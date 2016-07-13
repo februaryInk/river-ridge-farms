@@ -1,4 +1,4 @@
-class FarmsMailer < ApplicationMailer
+class FarmMailer < ApplicationMailer
   
   default to: ENV["CONTACT_PERSON"]
   
@@ -13,7 +13,7 @@ class FarmsMailer < ApplicationMailer
     mail(
       from: @email,
       subject: @subject,
-      template_path: "contact_us_mailer"
+      template_path: "farm_mailer"
     )
   end
 end
